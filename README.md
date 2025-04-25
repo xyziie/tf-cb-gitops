@@ -1,17 +1,9 @@
 # Managing infrastructure as code with Terraform, Cloud Build 
 
-This is the repo for the [Managing infrastructure as code with Terraform, Cloud Build, and GitOps]
-## Configuring your **dev** environment
+This is the repo for the [Managing infrastructure as code with Terraform, Cloud Build, and GitOps](https://cloud.google.com/docs/terraform/resource-management/managing-infrastructure-as-code?hl=en)
 
-Just for demostration, this step will:
- 1. Configure an apache2 http server on network '**dev**' and subnet '**dev**-subnet-01'
- 2. Open port 80 on firewall for this http server 
+<strong>Note:</strong>
 
-```bash
-cd ../environments/dev
-terraform init
-terraform plan
-terraform apply
-terraform destroy
-```
-//
+* Remote backend bucket needs to be created manually.
+* Need to check if subfolders like dev/prod inside the bucket gets created automatically as they store separate .tfstate files
+* 
