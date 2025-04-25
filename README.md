@@ -6,4 +6,5 @@ This is the repo for the [Managing infrastructure as code with Terraform, Cloud 
 
 * Remote backend bucket needs to be created manually.
 * Need to check if subfolders like dev/prod inside the bucket gets created automatically as they store separate .tfstate files
-* 
+* You will need to create a Cloudbuild trigger > *. (Any branch)
+* Go through the documentation above
