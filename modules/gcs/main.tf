@@ -22,3 +22,4 @@ resource "google_storage_bucket" "basic_bucket" {
   project = "${var.project}" # <<< REPLACE with your Project ID
 }
 
+
