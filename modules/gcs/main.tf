@@ -16,7 +16,7 @@ resource "google_storage_bucket" "basic_bucket" {
   name = "${local.network}-${random_id.bucket_suffix.hex}"
 
   # The location (region, multi-region, dual-region) for the bucket
-  location = "US-CENTRAL1" # Example: A single region
+  location = "US" # Example: A single region
 
   # Optional but Recommended: Explicitly set the project ID
   project = "${var.project}" # <<< REPLACE with your Project ID
