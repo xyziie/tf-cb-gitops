@@ -4,10 +4,13 @@ This is the repo for the [Managing infrastructure as code with Terraform, Cloud 
 
 <strong>2 Points:</strong>
 
-* Remote backend bucket needs to be created manually.Check if subfolders like dev/prod inside the bucket gets created automatically as they store separate .tfstate files(Based on backend.yaml)
+* Remote backend bucket needs to be created manually.
 * You will need to create a Cloudbuild trigger > *. (Any branch) > Authenticate with Repository
 * Clone the `dev` branch to the `CloudShell Editor` > git checkout dev > git pull
 * In `environments` > `dev` & `prod` > `terraform.tfvars` (Update Project-ID)
 * No need to run `terraform init` as it is already part of `cloudbuild.yaml` steps. #line 13
 * Commit the code from the `dev branch`.
+* Check if subfolders like dev/prod inside the bucket gets created automatically as they store separate .tfstate files(Based on backend.yaml)
 * Go through the documentation above
+
+* QQ - What will happen if in CB - trigger step , I use `dev` branch instad of `*. (Any branch)` ??
