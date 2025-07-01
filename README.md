@@ -15,4 +15,4 @@ This is the repo for the [Managing infrastructure as code with Terraform, Cloud 
 * Check if subfolders like dev/prod inside the bucket gets created automatically as they store separate .tfstate files(Based on backend.yaml)
 * Go through the documentation above
 
-* QQ - What will happen if in CB - trigger step , I use `dev` branch instad of `*. (Any branch)` ??
+
